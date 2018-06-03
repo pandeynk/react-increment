@@ -1,0 +1,51 @@
+{
+  "name": "react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.2",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --coverage",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "jest-environment-node",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 50,
+        "lines": 50,
+        "functions": 50
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "jsdom": "11.10.0",
+    "jsdom-global": "3.0.2"
+  }
+}
